@@ -47,7 +47,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>insurance-me</finalName>
+		<finalName>insure-me</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
