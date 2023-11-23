@@ -1,0 +1,14 @@
+- hosts: test-server
+  become: true
+  tasks:
+  - name: update the app
+    command: sudo apt-get update
+
+  - name: install docker
+    command: sudo apt install -y docker.io
+
+  - name: starte the docker service
+    command: sudo systemctl start docker
+
+  - name: deploy insurance application
+    command: sudo docker run -itd -p 8087:8086 navya2319/insurance:1.0
